@@ -1,0 +1,91 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #999999;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.content-body{
+    max-height: 100%;
+    width: 90%; /*contenedores padre*/
+    margin: 0 auto; /*centrar horizontalmente un bloque*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFEFE;
+    width: 70%;
+    padding: 5% 1%;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3);
+    align-content: space-around;
+}
+
+.bienvenida{
+    width: 100%;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 500%;
+}
+
+.menu{
+    width: 100%;
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu input{    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    line-height: 10%;
+    text-align: center;
+    font-size: 300%;
+}
+
+.botones-menu{
+    width: 100%;
+    padding: 3% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.botones-menu button{
+    font-size: 250%;
+}
+
+.btn-light:hover{
+    color: #ffffff;
+    background-color: #198754;
+}
+

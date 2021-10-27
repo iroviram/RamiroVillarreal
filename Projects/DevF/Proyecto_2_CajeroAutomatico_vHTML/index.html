@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKIS Cajero Digital</title>
+    
+    <!-- FAVICON  -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/bank_logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/bank_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/bank_logo.png">
+
+    <!-- CSS Style Sheet-->
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="content-body">
+        <div class="column">
+            <!-- <div class="sign-in">
+                <input id="account-username" type="text" placeholder="Username">
+                <input id="account-password" type="text" placeholder="Password">
+                <button type="button" onclick="signIn()"></button>
+            </div> -->
+                    
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <a href="index.html"><img src="img/bank_logo.png" alt="Bank Logo" class="bank-logo" id="bank-logo"></a>
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input id="account-username" type="text" placeholder="Enter Username" name="uname" required autocomplete="off">
+
+                        <label for="psw"><b>Password</b></label>
+                        <input id="account-password" type="password" placeholder="Enter Password" name="psw" required  autocomplete="off">
+
+                        <button type="button" onclick="signIn()" id="signin-button" type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        <label>
+                            <input type="checkbox" autocomplete="off" name="show-password" onclick="showPassword()">Show Password
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> -->
+                        <span class="psw"><a href="#" id="forgot-password" onclick="forgotPassword()">Forgot password?</a></span>
+                    </div>
+                </form>
+            </div>
+            <div id="id02" class="modal2">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input id="account-username-recovery" type="text" placeholder="Enter Username" name="uname" required autocomplete="off">
+
+                        <button type="button" id="password-recovery" onclick="passwordRecovery()" type="submit">Recover Password</button>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input id="reveal-account-password" type="text" placeholder="You Password Appears Here" name="psw" required  autocomplete="off">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="cuentasBanco.js"></script>
+</body>
+</html>

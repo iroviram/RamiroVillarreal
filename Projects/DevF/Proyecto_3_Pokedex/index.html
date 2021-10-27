@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"></a>
+            <a class="navbar-brand" id="pokemon1_151">Pokemon NationalDex</a>
+            <form class="d-flex">
+                <input class="form-control me-2" placeholder="Search" id="searchBar" onkeyup="searchHidePokemon()">
+                <!-- <button class="btn btn-outline-success" id="searchButton" type="submit">Search</button> -->
+            </form>
+        </div>
+    </nav>
+    <div class="content-body">
+        <div class="column">
+            <ul class="pokemon-list" id="listaPokemon" onclick="">
+<!--            <li class="pokemon-box" id="pokemon-1"></li>
+                <li class="pokemon-box" id="pokemon-2"></li>
+                <li class="pokemon-box" id="pokemon-3"></li>
+                <li class="pokemon-box" id="pokemon-4"></li>
+                <li class="pokemon-box" id="pokemon-5"></li>
+                <li class="pokemon-box" id="pokemon-6"></li>
+                <li class="pokemon-box" id="pokemon-7"></li>
+                <li class="pokemon-box" id="pokemon-8"></li>
+                <li class="pokemon-box" id="pokemon-9"></li>
+                <li class="pokemon-box" id="pokemon-10"></li>
+                <li class="pokemon-box" id="pokemon-11"></li>
+                <li class="pokemon-box" id="pokemon-12"></li>
+                <li class="pokemon-box" id="pokemon-13"></li>
+                <li class="pokemon-box" id="pokemon-14"></li>
+                <li class="pokemon-box" id="pokemon-15"></li>
+                <li class="pokemon-box" id="pokemon-16"></li>
+                <li class="pokemon-box" id="pokemon-17"></li>
+                <li class="pokemon-box" id="pokemon-18"></li>
+                <li class="pokemon-box" id="pokemon-19"></li>
+                <li class="pokemon-box" id="pokemon-20"></li>
+                <li class="pokemon-box" id="pokemon-21"></li>
+                <li class="pokemon-box" id="pokemon-22"></li>
+                <li class="pokemon-box" id="pokemon-23"></li>
+                <li class="pokemon-box" id="pokemon-24"></li>
+                <li class="pokemon-box" id="pokemon-25"></li>
+                <li class="pokemon-box" id="pokemon-26"></li>
+                <li class="pokemon-box" id="pokemon-27"></li>
+                <li class="pokemon-box" id="pokemon-28"></li>
+                <li class="pokemon-box" id="pokemon-29"></li>
+                <li class="pokemon-box" id="pokemon-30"></li>
+                <li class="pokemon-box" id="pokemon-31"></li>
+                <li class="pokemon-box" id="pokemon-32"></li>
+                <li class="pokemon-box" id="pokemon-33"></li>
+                <li class="pokemon-box" id="pokemon-34"></li>
+                <li class="pokemon-box" id="pokemon-35"></li>
+                <li class="pokemon-box" id="pokemon-36"></li>
+                <li class="pokemon-box" id="pokemon-37"></li>
+                <li class="pokemon-box" id="pokemon-38"></li>
+                <li class="pokemon-box" id="pokemon-39"></li>
+                <li class="pokemon-box" id="pokemon-40"></li>
+                <li class="pokemon-box" id="pokemon-41"></li>
+                <li class="pokemon-box" id="pokemon-42"></li>
+                <li class="pokemon-box" id="pokemon-43"></li>
+                <li class="pokemon-box" id="pokemon-44"></li>
+                <li class="pokemon-box" id="pokemon-45"></li>
+                <li class="pokemon-box" id="pokemon-46"></li>
+                <li class="pokemon-box" id="pokemon-47"></li>
+                <li class="pokemon-box" id="pokemon-48"></li>
+                <li class="pokemon-box" id="pokemon-49"></li>
+                <li class="pokemon-box" id="pokemon-50"></li>
+                <li class="pokemon-box" id="pokemon-51"></li>
+                <li class="pokemon-box" id="pokemon-52"></li>
+                <li class="pokemon-box" id="pokemon-53"></li>
+                <li class="pokemon-box" id="pokemon-54"></li>
+                <li class="pokemon-box" id="pokemon-55"></li>
+                <li class="pokemon-box" id="pokemon-56"></li>
+                <li class="pokemon-box" id="pokemon-57"></li>
+                <li class="pokemon-box" id="pokemon-58"></li>
+                <li class="pokemon-box" id="pokemon-59"></li>
+                <li class="pokemon-box" id="pokemon-60"></li>
+                <li class="pokemon-box" id="pokemon-61"></li>
+                <li class="pokemon-box" id="pokemon-62"></li>
+                <li class="pokemon-box" id="pokemon-63"></li>
+                <li class="pokemon-box" id="pokemon-64"></li>
+                <li class="pokemon-box" id="pokemon-65"></li>
+                <li class="pokemon-box" id="pokemon-66"></li>
+                <li class="pokemon-box" id="pokemon-67"></li>
+                <li class="pokemon-box" id="pokemon-68"></li>
+                <li class="pokemon-box" id="pokemon-69"></li>
+                <li class="pokemon-box" id="pokemon-70"></li>
+                <li class="pokemon-box" id="pokemon-71"></li>
+                <li class="pokemon-box" id="pokemon-72"></li>
+                <li class="pokemon-box" id="pokemon-73"></li>
+                <li class="pokemon-box" id="pokemon-74"></li>
+                <li class="pokemon-box" id="pokemon-75"></li>
+                <li class="pokemon-box" id="pokemon-76"></li>
+                <li class="pokemon-box" id="pokemon-77"></li>
+                <li class="pokemon-box" id="pokemon-78"></li>
+                <li class="pokemon-box" id="pokemon-79"></li>
+                <li class="pokemon-box" id="pokemon-80"></li>
+                <li class="pokemon-box" id="pokemon-81"></li>
+                <li class="pokemon-box" id="pokemon-82"></li>
+                <li class="pokemon-box" id="pokemon-83"></li>
+                <li class="pokemon-box" id="pokemon-84"></li>
+                <li class="pokemon-box" id="pokemon-85"></li>
+                <li class="pokemon-box" id="pokemon-86"></li>
+                <li class="pokemon-box" id="pokemon-87"></li>
+                <li class="pokemon-box" id="pokemon-88"></li>
+                <li class="pokemon-box" id="pokemon-89"></li>
+                <li class="pokemon-box" id="pokemon-90"></li>
+                <li class="pokemon-box" id="pokemon-91"></li>
+                <li class="pokemon-box" id="pokemon-92"></li>
+                <li class="pokemon-box" id="pokemon-93"></li>
+                <li class="pokemon-box" id="pokemon-94"></li>
+                <li class="pokemon-box" id="pokemon-95"></li>
+                <li class="pokemon-box" id="pokemon-96"></li>
+                <li class="pokemon-box" id="pokemon-97"></li>
+                <li class="pokemon-box" id="pokemon-98"></li>
+                <li class="pokemon-box" id="pokemon-99"></li>
+                <li class="pokemon-box" id="pokemon-100"></li>
+                <li class="pokemon-box" id="pokemon-101"></li>
+                <li class="pokemon-box" id="pokemon-102"></li>
+                <li class="pokemon-box" id="pokemon-103"></li>
+                <li class="pokemon-box" id="pokemon-104"></li>
+                <li class="pokemon-box" id="pokemon-105"></li>
+                <li class="pokemon-box" id="pokemon-106"></li>
+                <li class="pokemon-box" id="pokemon-107"></li>
+                <li class="pokemon-box" id="pokemon-108"></li>
+                <li class="pokemon-box" id="pokemon-109"></li>
+                <li class="pokemon-box" id="pokemon-110"></li>
+                <li class="pokemon-box" id="pokemon-111"></li>
+                <li class="pokemon-box" id="pokemon-112"></li>
+                <li class="pokemon-box" id="pokemon-113"></li>
+                <li class="pokemon-box" id="pokemon-114"></li>
+                <li class="pokemon-box" id="pokemon-115"></li>
+                <li class="pokemon-box" id="pokemon-116"></li>
+                <li class="pokemon-box" id="pokemon-117"></li>
+                <li class="pokemon-box" id="pokemon-118"></li>
+                <li class="pokemon-box" id="pokemon-119"></li>
+                <li class="pokemon-box" id="pokemon-120"></li>
+                <li class="pokemon-box" id="pokemon-121"></li>
+                <li class="pokemon-box" id="pokemon-122"></li>
+                <li class="pokemon-box" id="pokemon-123"></li>
+                <li class="pokemon-box" id="pokemon-124"></li>
+                <li class="pokemon-box" id="pokemon-125"></li>
+                <li class="pokemon-box" id="pokemon-126"></li>
+                <li class="pokemon-box" id="pokemon-127"></li>
+                <li class="pokemon-box" id="pokemon-128"></li>
+                <li class="pokemon-box" id="pokemon-129"></li>
+                <li class="pokemon-box" id="pokemon-130"></li>
+                <li class="pokemon-box" id="pokemon-131"></li>
+                <li class="pokemon-box" id="pokemon-132"></li>
+                <li class="pokemon-box" id="pokemon-133"></li>
+                <li class="pokemon-box" id="pokemon-134"></li>
+                <li class="pokemon-box" id="pokemon-135"></li>
+                <li class="pokemon-box" id="pokemon-136"></li>
+                <li class="pokemon-box" id="pokemon-137"></li>
+                <li class="pokemon-box" id="pokemon-138"></li>
+                <li class="pokemon-box" id="pokemon-139"></li>
+                <li class="pokemon-box" id="pokemon-140"></li>
+                <li class="pokemon-box" id="pokemon-141"></li>
+                <li class="pokemon-box" id="pokemon-142"></li>
+                <li class="pokemon-box" id="pokemon-143"></li>
+                <li class="pokemon-box" id="pokemon-144"></li>
+                <li class="pokemon-box" id="pokemon-145"></li>
+                <li class="pokemon-box" id="pokemon-146"></li>
+                <li class="pokemon-box" id="pokemon-147"></li>
+                <li class="pokemon-box" id="pokemon-148"></li>
+                <li class="pokemon-box" id="pokemon-149"></li>
+                <li class="pokemon-box" id="pokemon-150"></li>
+                <li class="pokemon-box" id="pokemon-151"></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+
+<!--    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabelTitle">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="modal-x-button"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="pokemon-details">
+                        <div class="pokemon-details-image" id="pokemonModalDetailsImage">
+
+                        </div>
+                        <div class="pokemon-stats" id="pokemonStats">
+                            <div class="pokemon-typenumber" id="pokemonTypeNumber">
+                                <div class="pokemon-type" id="pokemonType">
+
+                                </div>
+                                <span class="pokemon-number" id="pokemonNumber"></span>
+                            </div>
+                            <div class="pokemon-stats-numbers" id="pokemonStatsNumbers">
+                                <div class="pokemon-stats-bars" id="pokemonHp">
+                                    <span>HP</span>
+                                    <div class="stat-bar">
+                                        <div class="hp-bar" id="hpBar"></div>
+                                        <div class="hp-number" id="hpNumber"></div>
+                                    </div>
+                                </div>
+                                <div class="pokemon-stats-bars" id="pokemonAttach">
+                                    <span>Attach</span>
+                                    <div class="stat-bar">
+                                        <div class="attack-bar" id="attackBar"></div>
+                                        <div class="attack-number" id="attackNumber"></div>
+                                    </div>
+                                </div>
+                                <div class="pokemon-stats-bars" id="pokemonDefense">
+                                    <span>Defense</span>
+                                    <div class="stat-bar">
+                                        <div class="defense-bar" id="defenseBar"></div>
+                                        <div class="defense-number" id="defenseNumber"></div>
+                                    </div>
+                                </div>
+                                <div class="pokemon-stats-bars" id="pokemonSpecialAttack">
+                                    <span>Special Attack</span>
+                                    <div class="stat-bar">
+                                        <div class="special-attack-bar" id="special-attackBar"></div>
+                                        <div class="special-attack-number" id="special-attackNumber"></div>
+                                    </div>
+                                </div>
+                                <div class="pokemon-stats-bars" id="pokemonSpecialDefense">
+                                    <span>Special Defense</span>
+                                    <div class="stat-bar">
+                                        <div class="special-defense-bar" id="special-defenseBar"></div>
+                                        <div class="special-defense-number" id="special-defenseNumber"></div>
+                                    </div>
+                                </div>
+                                <div class="pokemon-stats-bars" id="pokemonSpeed">
+                                    <span>Speed</span>
+                                    <div class="stat-bar">
+                                        <div class="speed-bar" id="speedBar"></div>
+                                        <div class="speed-number" id="speedNumber"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="pokemon-profile-title" id="title-bars">Profile</h2>
+                    <div class="pokemon-profile" id="pokemonProfile">
+                        <div class="pokemon-profile-info" id="height-weight">
+                            <div class="info-name" id="height-name">Height:</div>
+                            <div class="info-number" id="height-number"></div>
+                            <div class="info-name" id="weight-name">Weight:</div>
+                            <div class="info-number" id="weight-number"></div>
+                        </div>
+                        <div class="pokemon-profile-info" id="captureRate-genderRatio">
+                            <div class="info-name" id="captureRate-name">Capture Rate:</div>
+                            <div class="info-number" id="captureRate-number"></div>
+                            <div class="info-name" id="genderRatio-name">Gender Ratio:</div>
+                            <div class="info-number" id="genderRatio-number"></div>
+                        </div>
+                        <div class="pokemon-profile-info" id="eggGroups-hatchSteps">
+                            <div class="info-name" id="eggGroups-name">Egg Groups:</div>
+                            <div class="info-number" id="eggGroups-number"></div>
+                            <div class="info-name" id="hatchSteps-name">Hatch Steps:</div>
+                            <div class="info-number" id="hatchSteps-number"></div>
+                        </div>
+                        <div class="pokemon-profile-info" id="abilities-evs">
+                            <div class="info-name" id="abilities-name">Abilities:</div>
+                            <div class="info-number" id="abilities-number"></div>
+                            <div class="info-name" id="evs-name">EVs:</div>
+                            <div class="info-number" id="evs-number"></div>
+                        </div>
+                    </div>
+                    <h2 class="type-damage-title" id="title-bars">Strenght/Weekness</h2>
+                    <div class="type-damage" id="typeDamage">
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <h2 class="type-evolutions-title" id="title-bars">Evolutions</h2>
+                    <div class="evolutions-section" id="evolutionSection">
+                        <span id="noEvolution"></span>
+                        <div class="evolution-row" id="evolutionRow1">
+
+                        </div>
+                        <div class="evolution-description" id="evolutionDescription">
+                            <span class="evolution-description" id="evolutionDescriptionText"></span>
+                        </div>
+                        <div class="evolution-row" id="evolutionRow2">
+
+                        </div>
+                        <div class="evolution-description" id="evolutionDescription1">
+                            <span class="evolution-description" id="evolutionDescriptionText1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MODAL -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./src/index.js"  ></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <<!-- script type="module" src="./src/pokeapi.js"></script> -->
+</body> 
+</html>

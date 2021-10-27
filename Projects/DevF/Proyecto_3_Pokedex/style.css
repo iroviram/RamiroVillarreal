@@ -1,0 +1,382 @@
+body{
+    background-image: url(./images/pokedex_body_bg.png);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.content-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.column{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    width: 90%;
+    
+}
+
+.pokemon-list{
+    display: flex;
+    background-color: darkcyan;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.pokemon-list img{
+    width: 100%;
+    height: auto;
+}
+
+.pokemon-box{
+    display: flex;
+    align-self: auto;
+    width: 160px;
+    max-width: 160px;
+    height: 160px;
+    margin: 10px;
+    background-color: #F2F2F2;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+}
+
+#pokemon-1{
+    /* background-color: black; */
+    /* background-color: var(--some-color); */
+}
+
+.pokemon-box:hover{
+    background-color:#BFBFBF;
+}
+
+.pokemon-name{
+    position: absolute;
+    top: 86%;
+    height: 20px;
+    width: 100%;
+    z-index: 2;
+    text-align:center;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+}
+
+.pokemon-button{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+.modal-dialog{
+    width: 600px;
+    max-width: 600px;
+}
+
+.modal-body{
+    justify-content: flex-end;
+}
+
+h5{
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#modal-x-button{
+    margin: -.5rem -.5rem -.5rem -.5rem;
+}
+
+.pokemon-details{
+    display: flex;
+    align-self: auto;
+    width: auto;
+    justify-content:space-evenly
+}
+
+.pokemon-details-image{
+    display: flex;
+    align-self: auto;
+    width: 160px;
+    max-width: 30%;
+    height: 160px;
+    margin: 5px;
+    background-color: #F2F2F2;
+    background-size: 160px;
+}
+
+.pokemon-stats{
+    width: 60%;
+}
+
+.pokemon-typenumber{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 33px;
+}
+
+.pokemon-type{
+    display: flex;
+    width: auto;
+    height: 25px;
+}
+
+.pokemon-type span{
+    text-transform: uppercase;
+    padding: 0 5px 0 5px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 10%;
+    font-weight: bolder;
+    
+}
+
+.pokemon-number{
+    width: auto;
+    height: 33px;
+    font-size:x-large;
+}
+
+.pokemon-stats-numbers{
+    height: 130px;
+    width: 300px;
+    max-width: 300px;
+}
+
+.pokemon-stats-bars{
+    display: flex;
+    height: 21px;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+}
+
+.pokemon-stats-bars span{
+    width: 40%;
+    max-width: 40%;
+    margin-bottom: 0.67px;
+    
+}
+
+.stat-bar{
+    width: 60%;
+    max-width: 60%;
+    background-color: gray;
+    margin-bottom: 0.67px;
+    font-size: 14px;
+    position: relative;
+}
+
+.stat-bar-number{
+    width: 20%;
+    height: 100%;
+    margin-bottom: 0.67px;
+}
+
+#hpBar{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    margin-bottom: 0.67px;
+    position: absolute;
+}
+
+#hpNumber{
+    margin-left: 5px;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+}
+
+#attackBar{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    margin-bottom: 0.67px;
+    position: absolute;
+}
+
+#attackNumber{
+    margin-left: 5px;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+}
+
+#defenseBar{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    margin-bottom: 0.67px;
+    position: absolute;
+}
+
+#special-attackBar{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    margin-bottom: 0.67px;
+    position: absolute;
+}
+
+#special-attackNumber{
+    margin-left: 5px;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+}
+
+#defenseNumber{
+    margin-left: 5px;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+}
+
+#special-defenseBar{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    margin-bottom: 0.67px;
+    position: absolute;
+}
+
+#special-defenseNumber{
+    margin-left: 5px;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+}
+
+#speedBar{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    margin-bottom: 0.67px;
+    position: absolute;
+}
+
+#speedNumber{
+    margin-left: 5px;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+}
+
+#title-bars{
+    height: 32px;
+    width: 95%;
+    max-width: 95%;
+    background-color: green;
+    font-size: 24px;
+    color:white;
+    text-align: center;
+    margin: 10px 0 10px 0px
+}
+
+.pokemon-profile{
+    height: auto;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.pokemon-profile-info{
+    display: flex;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    margin-bottom: 1px;
+    align-items: flex-end;
+}
+
+.info-name{
+    width: 41%;
+    font-weight: bold;
+}
+
+.info-number{
+    width: 59%;
+    text-transform: capitalize;
+}
+
+.evolutions-section{
+    width: 95%;
+    height: auto;
+    text-align: center;
+}
+
+.evolution-row{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    box-shadow: 0 4px 4px 0px #212121;
+    background-color: #616161;
+    background-image: url(./images/pokedex_body_bg.png);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.pokemon-preevolution{
+    height: 180px;
+    width: 190px;
+    max-width: 190px;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.evolution-arrow{
+    width: 48px;
+    height: 48px;
+    background-image: url(./images/rightArrow.pngwing.com.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    margin: 0 20px 0 20px;
+}
+
+.pokemon-evolution{
+    height: 180px;
+    width: 190px;
+    max-width: 190px;
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.evolution-description{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
