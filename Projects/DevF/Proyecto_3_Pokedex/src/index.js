@@ -9,7 +9,7 @@ const URIpokemon = 'https://pokeapi.co/api/v2/pokemon/';
 const URIpokemonSpecies = 'https://pokeapi.co/api/v2/pokemon-species/';
 //const URItypes = 'https://pokeapi.co/api/v2/type/';
 
-var pokemonCountMax = 3;
+var pokemonCountMax = 151;
 
 const pokemonTypeColors = {
     grass: '#9BCC50',

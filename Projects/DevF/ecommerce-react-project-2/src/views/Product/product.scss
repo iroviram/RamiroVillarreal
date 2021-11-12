@@ -1,0 +1,33 @@
+.section{
+    display: flex;
+    flex-flow: wrap;
+    margin: none;
+    justify-content: center;
+    background-color: #3F474F;
+}
+
+.product-column{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: center;
+    background-color: #3F474F;
+    margin-top: 2rem;
+}
+
+.product-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image-container{
+    height: 25rem;
+    width: 25rem;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
